@@ -8,6 +8,8 @@ python clustering_mean.py --dataset=cora --hops=17
 python clustering_mean.py --dataset=citeseer --hops=15
 python clustering_mean.py --dataset=pubmed --hops=56
 python clustering_mean.py --dataset=wiki --hops=8
+python clustering_mean.py --dataset=acm --hops=5
+python clustering_mean.py --dataset=dblp --hops=4
 echo "Clustering_max results: "
 python clustering_max.py --dataset=cora --hops=10
 python clustering_max.py --dataset=citeseer --hops=10

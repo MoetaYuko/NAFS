@@ -32,6 +32,8 @@ def run(args):
         adj, features, y, _  = load_wiki()
     elif args.dataset in ['cora', 'citeseer', 'pubmed']:
         adj, features, y, _, _, _, _ = load_data(args.dataset)
+    elif args.dataset in ['acm', 'dblp']:
+        adj, features, y = load_others(args.dataset)
     else:
         print("Dataset not supported!")
         exit()
